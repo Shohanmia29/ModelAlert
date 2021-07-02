@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Model alert</title>
+
+</head>
+<body>
+	<input id="inputType" type="text"/>
+	<button id="button"> click Me</button>
+	
+	<script>
+
+	var buttonType=document.getElementById("button")
+	button.addEventListener("click", function(){
+		var inputType=document.getElementById("inputType").value
+		if(inputType==''){
+			swal("Error!", "You clicked the button!", "error");
+		}
+		else{
+			swal("success!", "congration!", "success");
+		}
+	})
+	
+	</script>
+
+	
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
